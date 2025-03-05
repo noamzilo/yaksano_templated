@@ -1,9 +1,9 @@
 /* eslint-disable import/extensions */
 
 // Services Img Imports
-import Web from '../assets/images/Services/Web.png';
-import Mobile from '../assets/images/Services/Mobile.png';
-import UIUX from '../assets/images/Services/Design.png';
+import AI from '../assets/images/Services/AI2.jpg';
+import CV from '../assets/images/Services/CV6.jpg';
+import WEB from '../assets/images/Services/WEB2.jpg';
 
 // Portfolio Img Imports
 import Recruiting from '../assets/images/Portfolio/Recruiting.png';
@@ -41,17 +41,17 @@ import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
 export const Services = [
 	{
 	  title: 'Data Engineering & AI',
-	  imageUrl: Web,
+	  imageUrl: AI,
 	  animation: 'left',
 	},
 	{
 	  title: 'Computer Vision',
-	  imageUrl: Mobile,
+	  imageUrl: CV,
 	  animation: 'up',
 	},
 	{
 	  title: 'Web Development & LLMs',
-	  imageUrl: UIUX,
+	  imageUrl: WEB,
 	  animation: 'right',
 	},
 ];

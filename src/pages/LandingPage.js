@@ -17,19 +17,19 @@ import Discuss from 'parts/Discuss';
 
 export default class LandingPage extends Component {
 	componentDidMount() {
-	  window.scrollTo(0, 0);
+		window.scrollTo(0, 0);
 	}
 
 	render() {
-	  return (
-	    <Layout>
-	      <Hero />
-	      <Service data={Services} />
-	      <Portfolio data={Portfolios} />
-	      <Advantage data={Advantages} />
-	      <Testimonial data={Testimonials} />
-	      <Discuss />
-	    </Layout>
+		return (
+		<Layout>
+		  <Hero />
+		  <Service data={Services} />
+		  <Portfolio data={Portfolios} />
+		  <Advantage data={Advantages} />
+		  <Testimonial data={Testimonials} />
+		  <Discuss />
+		</Layout>
 	  );
 	}
 }
