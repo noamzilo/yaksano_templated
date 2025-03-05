@@ -55,7 +55,7 @@ export default function Header() {
 	          type="link"
 	          href="/project"
 	        >
-	          Project
+	          Projects
 	        </Button>
 	      </li>
 	      <li>
