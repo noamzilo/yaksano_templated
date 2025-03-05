@@ -152,7 +152,7 @@ export const Testimonials = [
 	  id: 1,
 	  name: 'Sasha Rose',
 	  company: 'Owner, Surveyor Corps',
-	  testimoni: 'Thanks for Racxstudio, you guys are the best! Keep up the great work!',
+	  testimoni: 'Thanks for Yaksano, you guys are the best! Keep up the great work!',
 	  imageUrl: Sasha,
 	},
 	{
@@ -166,7 +166,7 @@ export const Testimonials = [
 	  id: 3,
 	  name: 'Reiner John',
 	  company: 'CEO, Marley CO',
-	  testimoni: 'Racxstudio is so great. Thank you so much for a job well done.',
+	  testimoni: 'Yaksano is so great. Thank you so much for a job well done.',
 	  imageUrl: Reiner,
 	},
 ];

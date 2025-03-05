@@ -49,7 +49,7 @@ export default function Footer() {
 	      </div>
 	      <div className="flex-col text-center mt-7">
 	        <p className="text-lg text-gray-400 font-light">
-	          Copyright 2021 - All rights reserved - Racxstudio
+	          Copyright {new Date().getFullYear()} - All rights reserved - Yaksano LLC
 	        </p>
 	        <div className="flex-row">
 	          <p className="inline-block text-lg text-gray-400 font-light">
