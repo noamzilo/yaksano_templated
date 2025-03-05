@@ -1,6 +1,3 @@
-# Racx Studio
-![alt text](https://github.com/racmathafidz/racxstudio/blob/master/src/assets/images/screely.png)
-
 ### About
 A software house profile website built with ReactJS and TailwindCSS :computer:
 
@@ -18,9 +15,6 @@ A software house profile website built with ReactJS and TailwindCSS :computer:
 - [**React Tabs**](https://www.npmjs.com/package/react-tabs) : Tab component
 - [**React Toastify**](https://www.npmjs.com/package/react-toastify) : Toast notification 
 - [**ESLint**](https://eslint.org/) : Linting and formatting
-
-### Demo
-**Demo :** [racxstudio.vercel.app](https://racxstudio.vercel.app/)
 
 ### Available Scripts
 In the project directory, you can run:
