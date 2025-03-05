@@ -6,7 +6,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
-import { Fade } from 'react-awesome-reveal';
 import { Transition } from '@headlessui/react';
 import { useLocation } from 'react-router-dom';
 
@@ -47,7 +46,7 @@ export default function Header() {
             type="link"
             href="/team"
           >
-            Team
+            Teamaaaaaa
           </Button>
         </li>
         <li className="py-2 lg:py-0">
