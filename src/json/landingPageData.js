@@ -6,12 +6,12 @@ import CV from '../assets/images/Services/CV6.jpg';
 import WEB from '../assets/images/Services/WEB2.jpg';
 
 // Portfolio Img Imports
-import Recruiting from '../assets/images/Portfolio/Recruiting.png';
-import Stream from '../assets/images/Portfolio/Stream.png';
-import Freelance from '../assets/images/Portfolio/Freelance.png';
-import Aura from '../assets/images/Portfolio/Aura.png';
-import Surtido from '../assets/images/Portfolio/Surtido.png';
-import ManagementApp from '../assets/images/Portfolio/ManagementApp.png';
+import EPD from '../assets/images/Portfolio/yaksano/EPD.jpg';
+import AIRFORCE from '../assets/images/Portfolio/yaksano/AIRFORCE.jpg';
+import justgptit from '../assets/images/Portfolio/yaksano/justgptit.jpg';
+import seo_site from '../assets/images/Portfolio/yaksano/seo_site.jpg';
+import UVEYE1 from '../assets/images/Portfolio/yaksano/uveye1.jpg';
+import UVEYE2 from '../assets/images/Portfolio/yaksano/uveye2.jpg';
 
 // Advantages
 import Communicative from '../assets/images/Advantages/Communicative.png';
@@ -60,8 +60,9 @@ export const Portfolios = [
 	{
 	  id: 'automotive-pipeline',
 	  title: 'Automotive Data Pipeline',
-	  imageUrl: Recruiting,
+	  imageUrl: UVEYE1,
 	  type: 'Data Engineering',
+	  description: 'Designed and implemented scalable data pipelines processing over 1 million images weekly. Automated data workflows reduced manual processing time by 95%.',
 	  responsibility: [
 	    'Data Pipeline Development',
 	    'Process Automation',
@@ -69,21 +70,11 @@ export const Portfolios = [
 	  credit: 'UVeye',
 	},
 	{
-	  id: 'vehicle-inspection',
-	  title: 'Automated Vehicle Inspection',
-	  imageUrl: Stream,
-	  type: 'Computer Vision',
-	  responsibility: [
-	    'Computer Vision',
-	    'Real-time Processing',
-	  ],
-	  credit: 'UVeye',
-	},
-	{
 	  id: 'medical-data',
 	  title: 'Medical Data Processing',
-	  imageUrl: Freelance,
+	  imageUrl: EPD,
 	  type: 'Data Engineering',
+	  description: 'Developed real-time cardiac mapping system processing complex medical data streams. Automated workflows transformed manual processes into efficient operations.',
 	  responsibility: [
 	    'Real-time Processing',
 	    'Medical Data Systems',
@@ -93,8 +84,9 @@ export const Portfolios = [
 	{
 	  id: 'aerial-processing',
 	  title: 'Aerial Image Processing',
-	  imageUrl: Aura,
+	  imageUrl: AIRFORCE,
 	  type: 'Computer Vision',
+	  description: 'Developed advanced aerial image registration, achieving a 90% improvement in processing speed while maintaining accuracy.',
 	  responsibility: [
 	    'Image Registration',
 	    'Military Applications',
@@ -104,8 +96,9 @@ export const Portfolios = [
 	{
 	  id: 'justgptit',
 	  title: 'JustGptIt.com',
-	  imageUrl: Surtido,
+	  imageUrl: justgptit,
 	  type: 'Web Development',
+	  description: 'Built a viral web application using modern cloud architecture and serverless tech. Thousands of users served with minimal costs.',
 	  responsibility: [
 	    'LLM Integration',
 	    'Serverless Architecture',
@@ -113,10 +106,23 @@ export const Portfolios = [
 	  credit: 'Internal Project',
 	},
 	{
+		id: 'vehicle-inspection',
+		title: 'Automated Vehicle Inspection',
+		imageUrl: UVEYE2,
+		type: 'Computer Vision',
+		description: 'Implemented computer vision algorithms with 95% detection accuracy in automotive defect detection. Optimized image processing pipelines for real-time performance.',
+		responsibility: [
+		  'Computer Vision',
+		  'Real-time Processing',
+		],
+		credit: 'UVeye',
+	  },
+	{
 	  id: 'ai-content',
 	  title: 'AI Content Generation',
-	  imageUrl: ManagementApp,
+	  imageUrl: seo_site,
 	  type: 'Web Development',
+	  description: 'A network of websites that use AI to generate content. Monetized through ads, supporting 100K+ users monthly.',
 	  responsibility: [
 	    'AI Content Generation',
 	    'Web Development',

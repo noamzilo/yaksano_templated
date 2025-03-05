@@ -5,10 +5,8 @@
 import React, { Component } from 'react';
 import { Layout } from 'components/Layout';
 
-import Header from 'parts/Header';
 import HeroPortfolio from 'parts/HeroPortfolio';
 import Discuss from 'parts/Discuss';
-import Footer from 'parts/Footer';
 import AllPortfolio from 'parts/AllPortfolio';
 
 import { Portfolios } from 'json/landingPageData';
