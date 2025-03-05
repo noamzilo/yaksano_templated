@@ -3,6 +3,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
+import { Layout } from 'components/Layout';
 
 import Header from 'parts/Header';
 import HeroPortfolio from 'parts/HeroPortfolio';
@@ -19,13 +20,11 @@ export default class ProjectPage extends Component {
 
   render() {
     return (
-      <>
-        <Header />
+      <Layout>
         <HeroPortfolio />
         <AllPortfolio data={Portfolios} />
         <Discuss />
-        <Footer />
-      </>
+      </Layout>
     );
   }
 }

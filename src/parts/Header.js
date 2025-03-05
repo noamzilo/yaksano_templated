@@ -46,7 +46,7 @@ export default function Header() {
             type="link"
             href="/team"
           >
-            Teamaaaaaa
+            Team
           </Button>
         </li>
         <li className="py-2 lg:py-0">

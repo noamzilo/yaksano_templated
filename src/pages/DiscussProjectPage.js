@@ -3,9 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState, useEffect } from 'react';
 import { DiscussForm } from 'parts/DiscussForm';
-
-import Header from 'parts/Header';
-import Footer from 'parts/Footer';
+import { Layout } from 'components/Layout';
 
 export const DiscussProjectPage = () => {
   const [data, setData] = useState({
@@ -38,10 +36,8 @@ export const DiscussProjectPage = () => {
   };
 
   return (
-    <>
-      <Header />
+    <Layout>
       <DiscussForm data={data} onChange={onChange} resetForm={resetForm} />
-      <Footer />
-    </>
+    </Layout>
   );
 };

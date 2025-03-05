@@ -3,12 +3,9 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect } from 'react';
-
-import Header from 'parts/Header';
 import { useParams } from 'react-router-dom';
+import { Layout } from 'components/Layout';
 import PortfolioDetail from 'parts/PortfolioDetail';
-import Footer from 'parts/Footer';
-
 import { Portfolios } from 'json/landingPageData';
 
 export const ProjectDetailPage = () => {
@@ -18,10 +15,8 @@ export const ProjectDetailPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
-      <Header />
+    <Layout>
       <PortfolioDetail data={detailData.length === 1 ? [detailData[0]] : null} />
-      <Footer />
-    </>
+    </Layout>
   );
 };

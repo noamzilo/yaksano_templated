@@ -2,11 +2,10 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
+import { Layout } from 'components/Layout';
 
-import Header from 'parts/Header';
 import HeroTeam from 'parts/HeroTeam';
 import AllTeam from 'parts/AllTeam';
-import Footer from 'parts/Footer';
 
 import { TeamMembers } from 'json/landingPageData';
 
@@ -17,12 +16,10 @@ export default class TeamPage extends Component {
 
   render() {
     return (
-      <>
-        <Header />
+      <Layout>
         <HeroTeam />
         <AllTeam data={TeamMembers} />
-        <Footer />
-      </>
+      </Layout>
     );
   }
 }
