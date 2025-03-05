@@ -10,16 +10,16 @@ import AllTeam from 'parts/AllTeam';
 import { TeamMembers } from 'json/landingPageData';
 
 export default class TeamPage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+	componentDidMount() {
+	  window.scrollTo(0, 0);
+	}
 
-  render() {
-    return (
-      <Layout>
-        <HeroTeam />
-        <AllTeam data={TeamMembers} />
-      </Layout>
-    );
-  }
+	render() {
+	  return (
+	    <Layout>
+	      <HeroTeam />
+	      <AllTeam data={TeamMembers} />
+	    </Layout>
+	  );
+	}
 }

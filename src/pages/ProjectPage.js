@@ -14,17 +14,17 @@ import AllPortfolio from 'parts/AllPortfolio';
 import { Portfolios } from 'json/landingPageData';
 
 export default class ProjectPage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+	componentDidMount() {
+	  window.scrollTo(0, 0);
+	}
 
-  render() {
-    return (
-      <Layout>
-        <HeroPortfolio />
-        <AllPortfolio data={Portfolios} />
-        <Discuss />
-      </Layout>
-    );
-  }
+	render() {
+	  return (
+	    <Layout>
+	      <HeroPortfolio />
+	      <AllPortfolio data={Portfolios} />
+	      <Discuss />
+	    </Layout>
+	  );
+	}
 }

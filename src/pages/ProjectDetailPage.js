@@ -9,14 +9,14 @@ import PortfolioDetail from 'parts/PortfolioDetail';
 import { Portfolios } from 'json/landingPageData';
 
 export const ProjectDetailPage = () => {
-  const { id } = useParams();
-  const detailData = Portfolios.filter((item) => item.id === id);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  return (
-    <Layout>
-      <PortfolioDetail data={detailData.length === 1 ? [detailData[0]] : null} />
-    </Layout>
-  );
+	const { id } = useParams();
+	const detailData = Portfolios.filter((item) => item.id === id);
+	useEffect(() => {
+	  window.scrollTo(0, 0);
+	}, []);
+	return (
+	  <Layout>
+	    <PortfolioDetail data={detailData.length === 1 ? [detailData[0]] : null} />
+	  </Layout>
+	);
 };

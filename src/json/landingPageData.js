@@ -39,197 +39,197 @@ import UIUX1 from '../assets/images/TeamMembers/UIUX1.jpg';
 import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
 
 export const Services = [
-  {
-    title: 'Web Development',
-    imageUrl: Web,
-    animation: 'left',
-  },
-  {
-    title: 'Mobile Development',
-    imageUrl: Mobile,
-    animation: 'up',
-  },
-  {
-    title: 'UI/UX Design',
-    imageUrl: UIUX,
-    animation: 'right',
-  },
+	{
+	  title: 'Data Engineering & AI',
+	  imageUrl: Web,
+	  animation: 'left',
+	},
+	{
+	  title: 'Computer Vision',
+	  imageUrl: Mobile,
+	  animation: 'up',
+	},
+	{
+	  title: 'Web Development & LLMs',
+	  imageUrl: UIUX,
+	  animation: 'right',
+	},
 ];
 
 export const Portfolios = [
-  {
-    id: 'asd1293uasdads1',
-    title: 'Recruiting App',
-    imageUrl: Recruiting,
-    type: 'Mobile Apps',
-    responsibility: [
-      'Mobile Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15164950-Recruiting-app',
-  },
-  {
-    id: 'asd1293uhjkhkjh2',
-    title: 'Stream+',
-    imageUrl: Stream,
-    type: 'Mobile Apps',
-    responsibility: [
-      'Mobile Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15276430-Stream',
-  },
-  {
-    id: 'asd1293uvbvcbbd3',
-    title: 'Freelance',
-    imageUrl: Freelance,
-    type: 'Mobile Apps',
-    responsibility: [
-      'Mobile Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept',
-  },
-  {
-    id: 'asd1293ufgdfgs4',
-    title: 'Aura',
-    imageUrl: Aura,
-    type: 'Website',
-    responsibility: [
-      'Web Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15176338-Aura-Website-Main-Page',
-  },
-  {
-    id: 'asd1293ulskmnb5',
-    title: 'Surtido Rico',
-    imageUrl: Surtido,
-    type: 'Website',
-    responsibility: [
-      'Web Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15173118-Surtido-Rico',
-  },
-  {
-    id: 'asd1293ulkmnbj6',
-    title: 'Courses Management',
-    imageUrl: ManagementApp,
-    type: 'Website',
-    responsibility: [
-      'Web Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15197890-Courses-Management-and-Promoting-Web-App',
-  },
+	{
+	  id: 'automotive-pipeline',
+	  title: 'Automotive Data Pipeline',
+	  imageUrl: Recruiting,
+	  type: 'Data Engineering',
+	  responsibility: [
+	    'Data Pipeline Development',
+	    'Process Automation',
+	  ],
+	  credit: 'UVeye',
+	},
+	{
+	  id: 'vehicle-inspection',
+	  title: 'Automated Vehicle Inspection',
+	  imageUrl: Stream,
+	  type: 'Computer Vision',
+	  responsibility: [
+	    'Computer Vision',
+	    'Real-time Processing',
+	  ],
+	  credit: 'UVeye',
+	},
+	{
+	  id: 'medical-data',
+	  title: 'Medical Data Processing',
+	  imageUrl: Freelance,
+	  type: 'Data Engineering',
+	  responsibility: [
+	    'Real-time Processing',
+	    'Medical Data Systems',
+	  ],
+	  credit: 'EPD Solutions',
+	},
+	{
+	  id: 'aerial-processing',
+	  title: 'Aerial Image Processing',
+	  imageUrl: Aura,
+	  type: 'Computer Vision',
+	  responsibility: [
+	    'Image Registration',
+	    'Military Applications',
+	  ],
+	  credit: 'Israel Air Force',
+	},
+	{
+	  id: 'justgptit',
+	  title: 'JustGptIt.com',
+	  imageUrl: Surtido,
+	  type: 'Web Development',
+	  responsibility: [
+	    'LLM Integration',
+	    'Serverless Architecture',
+	  ],
+	  credit: 'Internal Project',
+	},
+	{
+	  id: 'ai-content',
+	  title: 'AI Content Generation',
+	  imageUrl: ManagementApp,
+	  type: 'Web Development',
+	  responsibility: [
+	    'AI Content Generation',
+	    'Web Development',
+	  ],
+	  credit: 'Internal Project',
+	},
 ];
 
 export const Advantages = [
-  [{
-    title: 'Communicative',
-    description: 'We communicate our project ideas and progress to make it clear.',
-    imageUrl: Communicative,
-  },
-  {
-    title: 'Management',
-    description: 'We manage our project properly to make our project done well.',
-    imageUrl: Management,
-  }],
-  [{
-    title: 'Collaborative​',
-    description: 'Our team are very collaborative to make our project done well.',
-    imageUrl: Collaborative,
-  },
-  {
-    title: 'Favorite',
-    description: "We've did so many project and all of our client love it.",
-    imageUrl: Favorite,
-  }],
+	[{
+	  title: 'AI Expertise',
+	  description: 'Deep expertise in artificial intelligence and machine learning solutions.',
+	  imageUrl: Communicative,
+	},
+	{
+	  title: 'Scalable Solutions',
+	  description: 'Building robust, scalable systems that grow with your needs.',
+	  imageUrl: Management,
+	}],
+	[{
+	  title: 'Data-Driven',
+	  description: 'Transforming raw data into valuable business insights.',
+	  imageUrl: Collaborative,
+	},
+	{
+	  title: 'Innovation',
+	  description: 'Staying ahead with cutting-edge technology and approaches.',
+	  imageUrl: Favorite,
+	}],
 ];
 export const Testimonials = [
-  {
-    id: 1,
-    name: 'Sasha Rose',
-    company: 'Owner, Surveyor Corps',
-    testimoni: 'Thanks for Racxstudio, you guys are the best! Keep up the great work!',
-    imageUrl: Sasha,
-  },
-  {
-    id: 2,
-    name: 'Kruger Khan',
-    company: 'Director, Shultan Oil',
-    testimoni: 'I just wanted to let you know that it’s been great working with Racxstudio.',
-    imageUrl: Kruger,
-  },
-  {
-    id: 3,
-    name: 'Reiner John',
-    company: 'CEO, Marley CO',
-    testimoni: 'Racxstudio is so great. Thank you so much for a job well done.',
-    imageUrl: Reiner,
-  },
+	{
+	  id: 1,
+	  name: 'Sasha Rose',
+	  company: 'Owner, Surveyor Corps',
+	  testimoni: 'Thanks for Racxstudio, you guys are the best! Keep up the great work!',
+	  imageUrl: Sasha,
+	},
+	{
+	  id: 2,
+	  name: 'Kruger Khan',
+	  company: 'Director, Shultan Oil',
+	  testimoni: 'fake testimonial',
+	imageUrl: Kruger,
+	},
+	{
+	  id: 3,
+	  name: 'Reiner John',
+	  company: 'CEO, Marley CO',
+	  testimoni: 'Racxstudio is so great. Thank you so much for a job well done.',
+	  imageUrl: Reiner,
+	},
 ];
 
 export const TeamMembers = [
-  {
-    name: 'Rach David',
-    position: 'CEO',
-    imageUrl: CEO,
-  },
-  {
-    name: 'Pauline Sydney',
-    position: 'HRD',
-    imageUrl: HRD,
-  },
-  {
-    name: 'Granger Watterson',
-    position: 'Finance',
-    imageUrl: Finance,
-  },
-  {
-    name: 'Tom Jimmy',
-    position: 'Project Manager',
-    imageUrl: ProjectManager,
-  },
-  {
-    name: 'Jim Hendrix',
-    position: 'Front-end Developer',
-    imageUrl: Frontend1,
-  },
-  {
-    name: 'Calvin Max',
-    position: 'Front-end Developer',
-    imageUrl: Frontend2,
-  },
-  {
-    name: 'Hawkins Jim',
-    position: 'Back-end Developer',
-    imageUrl: Backend1,
-  },
-  {
-    name: 'Don Bizaro',
-    position: 'Back-end Developer',
-    imageUrl: Backend2,
-  },
-  {
-    name: 'Bill Markinson',
-    position: 'Mobile Developer',
-    imageUrl: Mobile1,
-  },
-  {
-    name: 'Igor Kavarov',
-    position: 'Mobile Developer',
-    imageUrl: Mobile2,
-  },
-  {
-    name: 'Freddie Curl',
-    position: 'UI/UX Designer',
-    imageUrl: UIUX2,
-  },
-  {
-    name: 'Monica Lovegood',
-    position: 'UI/UX Designer',
-    imageUrl: UIUX1,
-  },
+	{
+	  name: 'Rach David',
+	  position: 'CEO',
+	  imageUrl: CEO,
+	},
+	{
+	  name: 'Pauline Sydney',
+	  position: 'HRD',
+	  imageUrl: HRD,
+	},
+	{
+	  name: 'Granger Watterson',
+	  position: 'Finance',
+	  imageUrl: Finance,
+	},
+	{
+	  name: 'Tom Jimmy',
+	  position: 'Project Manager',
+	  imageUrl: ProjectManager,
+	},
+	{
+	  name: 'Jim Hendrix',
+	  position: 'Front-end Developer',
+	  imageUrl: Frontend1,
+	},
+	{
+	  name: 'Calvin Max',
+	  position: 'Front-end Developer',
+	  imageUrl: Frontend2,
+	},
+	{
+	  name: 'Hawkins Jim',
+	  position: 'Back-end Developer',
+	  imageUrl: Backend1,
+	},
+	{
+	  name: 'Don Bizaro',
+	  position: 'Back-end Developer',
+	  imageUrl: Backend2,
+	},
+	{
+	  name: 'Bill Markinson',
+	  position: 'Mobile Developer',
+	  imageUrl: Mobile1,
+	},
+	{
+	  name: 'Igor Kavarov',
+	  position: 'Mobile Developer',
+	  imageUrl: Mobile2,
+	},
+	{
+	  name: 'Freddie Curl',
+	  position: 'UI/UX Designer',
+	  imageUrl: UIUX2,
+	},
+	{
+	  name: 'Monica Lovegood',
+	  position: 'UI/UX Designer',
+	  imageUrl: UIUX1,
+	},
 ];

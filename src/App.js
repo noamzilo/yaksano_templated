@@ -16,18 +16,18 @@ import { DiscussProjectPage } from 'pages/DiscussProjectPage';
 import './assets/css/styles.css';
 
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route exact path="/" element={<LandingPage />} />
-        <Route path="/project" element={<ProjectPage />} />
-        <Route exact path="/project/:id" element={<ProjectDetailPage />} />
-        <Route exact path="/team" element={<TeamPage />} />
-        <Route exact path="/discuss-project" element={<DiscussProjectPage />} />
-        <Route path="**" element={<NotFoundPage />} />
-      </Routes>
-    </>
-  );
+	return (
+	  <>
+		<Routes>
+			<Route exact path="/" element={<LandingPage />} />
+			<Route path="/project" element={<ProjectPage />} />
+			<Route exact path="/project/:id" element={<ProjectDetailPage />} />
+			<Route exact path="/team" element={<TeamPage />} />
+			<Route exact path="/discuss-project" element={<DiscussProjectPage />} />
+			<Route path="**" element={<NotFoundPage />} />
+		</Routes>
+	  </>
+	);
 }
 
 export default App;
