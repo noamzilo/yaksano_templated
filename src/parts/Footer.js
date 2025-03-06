@@ -26,25 +26,14 @@ export default function Footer() {
 	            Office
 	          </h1>
 	          <p className="text-lg text-gray-400 font-light">
-	            rac.hafidz@gmail.com
+	            contact@yaksano.com
 	          </p>
 	          <p className="text-lg text-gray-400 font-light">
-	            Klaten, Central Java, Indonesia
+			  	30 N Gould St Ste N Sheridan, WY 82801
 	          </p>
 	        </div>
 	        <div className="w-1/3 ml-16 sm:ml-0 mt-0">
-	          <h1 className="text-lg text-theme-blue pt-4 pb-2">
-	            Social
-	          </h1>
-	          <Button href="https://www.instagram.com/racmathafidz/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
-	            Instagram
-	          </Button>
-	          <Button href="https://www.linkedin.com/in/racmat-hafidz-89982a156/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
-	            LinkedIn
-	          </Button>
-	          <Button href="https://github.com/racmathafidz" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
-	            Github
-	          </Button>
+	     
 	        </div>
 	      </div>
 	      <div className="flex-col text-center mt-7">
@@ -52,12 +41,7 @@ export default function Footer() {
 	          Copyright {new Date().getFullYear()} - All rights reserved - Yaksano LLC
 	        </p>
 	        <div className="flex-row">
-	          <p className="inline-block text-lg text-gray-400 font-light">
-	            Made with &#x2764; by&nbsp;
-	          </p>
-	          <Button href="https://github.com/racmathafidz" type="link" target="_blank" className="text-lg text-theme-purple font-light" isExternal>
-	            Racmat Hafidz Fadli
-	          </Button>
+	          
 	        </div>
 	      </div>
 	    </div>

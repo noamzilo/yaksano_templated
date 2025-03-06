@@ -20,9 +20,9 @@ import Management from '../assets/images/Advantages/Management.png';
 import Favorite from '../assets/images/Advantages/Favorite.png';
 
 // Testimonials
-import Sasha from '../assets/images/Testimonials/Sasha.jpg';
-import Reiner from '../assets/images/Testimonials/Reiner.jpg';
-import Kruger from '../assets/images/Testimonials/Kruger.jpg';
+import Ilya from '../assets/images/Testimonials/Ilya.jpeg';
+import Evgeny from '../assets/images/Testimonials/Evgeny.jpeg';
+import Meir from '../assets/images/Testimonials/Meir.jpeg';
 
 // TeamMembers
 import CEO from '../assets/images/TeamMembers/CEO.jpg';
@@ -156,25 +156,25 @@ export const Advantages = [
 export const Testimonials = [
 	{
 	  id: 1,
-	  name: 'Sasha Rose',
-	  company: 'Owner, Surveyor Corps',
-	  testimoni: 'Thanks for Yaksano, you guys are the best! Keep up the great work!',
-	  imageUrl: Sasha,
+	  name: 'Ilya G',
+	  company: 'UVEye',
+	  testimoni: "I've had the privilege of managing Noam for a little more than two years, and in that time, I have known him to be a serious and well-grounded professional. His work is thorough, well-planned, and his execution consistently exceeds expectations.\n\nThis has been incredibly valuable when working with him, as our team is small and requires precise and rapid delivery. He demonstrates exceptional work ethic, and on a personal level, he is truly a pleasure to work with\n\nThe infrastructure he developed is a crucial backbone of many of our current tools, which rely on it, proving to be a robust solution that stands the test of time",
+	  imageUrl: Ilya,
 	},
 	{
-	  id: 2,
-	  name: 'Kruger Khan',
-	  company: 'Director, Shultan Oil',
-	  testimoni: 'fake testimonial',
-	imageUrl: Kruger,
-	},
+		id: 2,
+		name: 'Evgeny G',
+		company: 'IAF',
+		testimoni: "I had the privilege of working alongside Noam in the Israeli Air Force, where we tackled the challenge of building a real-time registration and tracking system for aerial imagery. Noam's ability to bridge the gap between software engineering and computer vision was invaluable—his deep understanding of both fields allowed us to move from concept to execution with remarkable efficiency. \n\nBeyond his technical skills, Noam is the kind of engineer you want on your team: sharp, resourceful, and relentless in problem-solving. Whether it was optimizing algorithms for speed or refining our approach to handling complex visual data, he always brought innovative solutions to the table. His leadership and structured thinking kept us focused, and his willingness to mentor and share knowledge made everyone around him better.\n\nWorking with Noam was both inspiring and rewarding—I’d collaborate with him again without hesitation",
+		imageUrl: Evgeny,
+	  },
 	{
-	  id: 3,
-	  name: 'Reiner John',
-	  company: 'CEO, Marley CO',
-	  testimoni: 'Yaksano is so great. Thank you so much for a job well done.',
-	  imageUrl: Reiner,
-	},
+		id: 3,
+		name: 'Meir H',
+		company: 'IAF',
+		testimoni: "I had the pleasure of managing Noam in the Israeli Air Force, where he played a key role in developing a real-time registration and tracking system for aerial imagery. His expertise in software engineering and computer vision, combined with his structured problem-solving approach, made a significant impact on our success.\n\nWhat sets Noam apart is his ability to quickly grasp complex challenges, break them down into actionable steps, and deliver high-quality solutions. He doesn’t just write code—he brings a deep understanding of the entire system, optimizing processes and improving overall performance. His ability to communicate technical concepts clearly and work seamlessly with different stakeholders makes him a valuable asset in any project.\n\nFor any company looking for expert consultancy in software engineering, computer vision, or real-time systems, Noam is the right person to call. His experience, efficiency, and ability to deliver results will undoubtedly drive any project forward",
+		imageUrl: Meir,
+	  },
 ];
 
 export const TeamMembers = [
