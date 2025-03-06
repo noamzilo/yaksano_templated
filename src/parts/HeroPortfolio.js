@@ -17,8 +17,8 @@ export default function HeroPortfolio() {
 	      </Fade>
 	      <Fade direction="up" triggerOnce delay={400}>
 	        <p className="font-light text-xl text-gray-400 leading-relaxed">
-	          As a Software House that designs and develops websites, mobile apps, and UI/UX design, we have been trusted by our clients from all around the world.
-	        </p>
+				As a technology-focused software company, we specialize in developing AI-driven solutions, backend systems, and data-centric applications. With expertise in machine learning, deep learning, and computer vision, we design and optimize intelligent systems that enhance business operations. Our clients trust us to deliver scalable, high-performance software solutions that leverage cutting-edge AI and data engineering techniques.
+			</p>
 	      </Fade>
 	    </div>
 	    <div className="w-full sm:w-1/2 sm:pr-12">

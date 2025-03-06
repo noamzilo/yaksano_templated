@@ -20,8 +20,8 @@ function App() {
 	  <>
 		<Routes>
 			<Route exact path="/" element={<LandingPage />} />
-			<Route path="/project" element={<ProjectPage />} />
-			<Route exact path="/project/:id" element={<ProjectDetailPage />} />
+			<Route path="/projects" element={<ProjectPage />} />
+			<Route exact path="/projects/:id" element={<ProjectDetailPage />} />
 			<Route exact path="/team" element={<TeamPage />} />
 			<Route exact path="/discuss-project" element={<DiscussProjectPage />} />
 			<Route path="**" element={<NotFoundPage />} />
