@@ -13,7 +13,7 @@ export default function Hero() {
 	return (
 		<section
 			className="hero flex flex-col md:flex-row items-center justify-between overflow-hidden"
-			style={{ scrollSnapAlign: "start", maxHeight: "calc(100vh - 6.375rem)" }} // Ensures it's "above the fold" if using snap
+			style={{ scrollSnapAlign: "start", marginBottom: "1em" }} // Ensures it's "above the fold" if using snap
 		>
 			<div className="md:w-1/2 flex flex-col px-4 md:px-8 mb-8 md:mb-0">
 				<h1 className="text-4xl sm:text-5xl text-theme-blue font-bold leading-tight mb-5">
