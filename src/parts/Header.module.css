@@ -2,6 +2,9 @@
 
 .header {
 	padding: 0.75rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 @media (min-width: 1024px) {
@@ -13,6 +16,13 @@
 .headerContainer {
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	.headerContainer {
+		width: auto;
+	}
 }
 
 .menuButton {
@@ -50,6 +60,7 @@
 }
 
 .navItem {
+	font-weight: 500;
 	font-size: 1.125rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -57,9 +68,11 @@
 
 .activeNavItem {
 	composes: navItem;
+	/* Add any active state styling here */
 }
 
 .ctaButton {
+	font-weight: 500;
 	font-size: 1.125rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -78,6 +91,14 @@
 
 .mobileMenu {
 	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: white;
+	padding: 1rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	z-index: 10;
 }
 
 @media (min-width: 1024px) {

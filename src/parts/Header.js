@@ -18,9 +18,9 @@ export default function Header() {
 
 	return (
 		<header className={styles.header}>
-			<div className={styles.headerContainer}>
-				<BrandIcon />
-
+			<BrandIcon />
+			
+			<div>
 				<button 
 					className={styles.menuButton} 
 					onClick={() => setIsCollapse(!isCollapse)}
@@ -48,50 +48,87 @@ export default function Header() {
 						/>
 					</svg>
 				</button>
-			</div>
 
-			<ul className={styles.navList}>
-				<li>
-					<Button 
-						className={path === '/' ? styles.activeNavItem : styles.navItem} 
-						type="link" 
-						href="/"
-					>
-						Home
-					</Button>
-				</li>
-				<li>
-					<Button 
-						className={path === '/team' ? styles.activeNavItem : styles.navItem} 
-						type="link" 
-						href="/team"
-					>
-						Team
-					</Button>
-				</li>
-				<li>
-					<Button 
-						className={path === '/projects' ? styles.activeNavItem : styles.navItem} 
-						type="link" 
-						href="/projects"
-					>
-						Projects
-					</Button>
-				</li>
-				<li>
-					<Button 
-						className={styles.ctaButton}
-						type="link" 
-						href="/discuss-project"
-					>
-						Discuss Project
-					</Button>
-				</li>
-			</ul>
+				<ul className={styles.navList}>
+					<li>
+						<Button 
+							className={path === '/' ? styles.activeNavItem : styles.navItem} 
+							type="link" 
+							href="/"
+						>
+							Home
+						</Button>
+					</li>
+					<li>
+						<Button 
+							className={path === '/team' ? styles.activeNavItem : styles.navItem} 
+							type="link" 
+							href="/team"
+						>
+							Team
+						</Button>
+					</li>
+					<li>
+						<Button 
+							className={path === '/projects' ? styles.activeNavItem : styles.navItem} 
+							type="link" 
+							href="/projects"
+						>
+							Projects
+						</Button>
+					</li>
+					<li>
+						<Button 
+							className={styles.ctaButton}
+							type="link" 
+							href="/discuss-project"
+						>
+							Discuss Project
+						</Button>
+					</li>
+				</ul>
+			</div>
 			
 			{isCollapse && (
 				<div className={styles.mobileMenu}>
-					{/* Mobile menu content can be added here */}
+					<ul>
+						<li className="py-2">
+							<Button 
+								className={path === '/' ? styles.activeNavItem : styles.navItem} 
+								type="link" 
+								href="/"
+							>
+								Home
+							</Button>
+						</li>
+						<li className="py-2">
+							<Button 
+								className={path === '/team' ? styles.activeNavItem : styles.navItem} 
+								type="link" 
+								href="/team"
+							>
+								Team
+							</Button>
+						</li>
+						<li className="py-2">
+							<Button 
+								className={path === '/projects' ? styles.activeNavItem : styles.navItem} 
+								type="link" 
+								href="/projects"
+							>
+								Projects
+							</Button>
+						</li>
+						<li className="py-2">
+							<Button 
+								className={styles.ctaButton}
+								type="link" 
+								href="/discuss-project"
+							>
+								Discuss Project
+							</Button>
+						</li>
+					</ul>
 				</div>
 			)}
 		</header>
