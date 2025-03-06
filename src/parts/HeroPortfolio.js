@@ -6,7 +6,7 @@ import React from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 
-import heroPortfolio from 'assets/images/hero/portfolioHero.png';
+import heroPortfolio from 'assets/images/hero/PortfolioHero.jpg';
 
 export default function HeroPortfolio() {
 	return (
@@ -21,7 +21,7 @@ export default function HeroPortfolio() {
 			</p>
 	      </Fade>
 	    </div>
-	    <div className="w-full sm:w-1/2 sm:pr-12">
+	    <div className="w-full sm:w-1/2 sm:pr-12" style={{borderRadius: '20px', overflow: 'hidden', padding: 0}}>
 	      <Fade direction="up" triggerOnce>
 	        <img src={heroPortfolio} alt="Hero" />
 	      </Fade>

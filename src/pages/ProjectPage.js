@@ -7,7 +7,7 @@ import { Layout } from 'components/Layout';
 
 import HeroPortfolio from 'parts/HeroPortfolio';
 import Discuss from 'parts/Discuss';
-import AllPortfolio from 'parts/AllPortfolio';
+import Portfolio from 'parts/Portfolio';
 
 import { Portfolios } from 'json/landingPageData';
 
@@ -20,7 +20,7 @@ export default class ProjectPage extends Component {
 	  return (
 	    <Layout>
 	      <HeroPortfolio />
-	      <AllPortfolio data={Portfolios} />
+		  <Portfolio data={Portfolios} />
 	      <Discuss />
 	    </Layout>
 	  );
