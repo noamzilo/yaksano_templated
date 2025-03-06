@@ -21,9 +21,9 @@ export default function HeroPortfolio() {
 			</p>
 	      </Fade>
 	    </div>
-	    <div className="w-full sm:w-1/2 sm:pr-12" style={{borderRadius: '20px', overflow: 'hidden', padding: 0}}>
+	    <div className="w-full sm:w-1/2 sm:pr-12">
 	      <Fade direction="up" triggerOnce>
-	        <img src={heroPortfolio} alt="Hero" />
+	        <img src={heroPortfolio} alt="Hero" style={{borderRadius: '20px'}} />
 	      </Fade>
 	    </div>
 	  </section>
