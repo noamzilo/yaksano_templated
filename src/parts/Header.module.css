@@ -1,0 +1,87 @@
+/* src/parts/Header.module.css */
+
+.header {
+	padding: 0.75rem 1rem;
+}
+
+@media (min-width: 1024px) {
+	.header {
+		padding: 0.75rem 2rem;
+	}
+}
+
+.headerContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menuButton {
+	display: block;
+	color: var(--theme-blue);
+}
+
+@media (min-width: 1024px) {
+	.menuButton {
+		display: none;
+	}
+}
+
+.menuButton:focus {
+	outline: none;
+}
+
+.menuIcon {
+	width: 2rem;
+	height: 2rem;
+}
+
+.navList {
+	display: none;
+	color: var(--theme-blue);
+	letter-spacing: 0.05em;
+	align-items: center;
+}
+
+@media (min-width: 1024px) {
+	.navList {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.navItem {
+	font-size: 1.125rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.activeNavItem {
+	composes: navItem;
+}
+
+.ctaButton {
+	font-size: 1.125rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background-color: var(--theme-purple);
+	color: white;
+	border-radius: 9999px;
+	border: 2px solid var(--theme-purple);
+	transition-duration: 200ms;
+}
+
+.ctaButton:hover {
+	background-color: var(--dark-theme-purple);
+}
+
+.mobileMenu {
+	display: block;
+}
+
+@media (min-width: 1024px) {
+	.mobileMenu {
+		display: none;
+	}
+} 
