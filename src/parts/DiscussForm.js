@@ -20,40 +20,34 @@ import Button from 'elements/Button';
 
 export const DiscussForm = (actions) => {
 	const { data, resetForm } = actions;
-	const submitEmail = () => {
-	  const {
-	    name, company, email, phone, projectIdea,
-	  } = data;
-
-	  const templateParams = {
-	    from_name: `${name} - ${company} ( ${phone} - ${email} )`,
-	    to_name: 'Yaksano',
-	    message: projectIdea,
-	  };
-
-	  if (
-	    name !== ''
-	    && company !== ''
-	    && email !== ''
-	    && phone !== ''
-	    && projectIdea !== ''
-	  ) {
-	    emailjs.send(
-	      'service_h4gtndg',
-	      'template_a9tvs7a',
-	      templateParams,
-	      'user_csqIxzN5mKsl1yw4ffJzV',
-	    )
-	      .then(() => {
-	        toast.success('Success! we\'\ll get back to you soon. Thank you!');
-	        resetForm();
-	      }, (error) => {
-	        toast.error(error);
-	      });
-	  } else {
-	    toast.error('Please fill out the blank form.');
-	  }
+	const submitEmail = async () => {
+		const { name, company, email, phone, projectIdea } = data;
+	
+		if (!name || !company || !email || !phone || !projectIdea) {
+			toast.error('Please fill out all fields.');
+			return;
+		}
+	
+		try {
+			const response = await fetch('http://localhost:5000/send-email', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ name, company, email, phone, projectIdea }),
+			});
+	
+			const result = await response.json();
+	
+			if (response.ok) {
+				toast.success('Success! We’ll get back to you soon.');
+				resetForm();
+			} else {
+				toast.error(result.error);
+			}
+		} catch (error) {
+			toast.error('Error sending email. Please try again.');
+		}
 	};
+	
 
 	return (
 	  <section className="flex flex-col container mx-auto mt-10 justify-center">
@@ -105,7 +99,7 @@ export const DiscussForm = (actions) => {
 	          <Form
 	            id="phone"
 	            name="phone"
-	            type="number"
+	            type="tel"
 	            value={data.phone}
 	            placeholder="Your contact number"
 	            className=""

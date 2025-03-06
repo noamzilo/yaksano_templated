@@ -25,18 +25,10 @@ import Evgeny from '../assets/images/Testimonials/Evgeny.jpeg';
 import Meir from '../assets/images/Testimonials/Meir.jpeg';
 
 // TeamMembers
-import CEO from '../assets/images/TeamMembers/CEO.jpg';
-import HRD from '../assets/images/TeamMembers/HRD.jpg';
-import Finance from '../assets/images/TeamMembers/Finance.jpg';
-import ProjectManager from '../assets/images/TeamMembers/Project-manager.jpg';
-import Frontend1 from '../assets/images/TeamMembers/Frontend1.jpg';
-import Frontend2 from '../assets/images/TeamMembers/Frontend2.jpg';
-import Backend1 from '../assets/images/TeamMembers/Backend1.jpg';
-import Backend2 from '../assets/images/TeamMembers/Backend2.jpg';
-import Mobile1 from '../assets/images/TeamMembers/Mobile1.jpg';
-import Mobile2 from '../assets/images/TeamMembers/Mobile2.jpg';
-import UIUX1 from '../assets/images/TeamMembers/UIUX1.jpg';
-import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
+import Zilo from '../assets/images/TeamMembers/Zilo.jpg';
+import Daniel from '../assets/images/TeamMembers/Daniel.jpeg';
+import Steiner from '../assets/images/TeamMembers/Steiner.jpeg';
+
 
 export const Services = [
 	{
@@ -165,77 +157,35 @@ export const Testimonials = [
 		id: 2,
 		name: 'Evgeny G',
 		company: 'IAF',
-		testimoni: "I had the privilege of working alongside Noam in the Israeli Air Force, where we tackled the challenge of building a real-time registration and tracking system for aerial imagery. Noam's ability to bridge the gap between software engineering and computer vision was invaluable—his deep understanding of both fields allowed us to move from concept to execution with remarkable efficiency. \n\nBeyond his technical skills, Noam is the kind of engineer you want on your team: sharp, resourceful, and relentless in problem-solving. Whether it was optimizing algorithms for speed or refining our approach to handling complex visual data, he always brought innovative solutions to the table. His leadership and structured thinking kept us focused, and his willingness to mentor and share knowledge made everyone around him better.\n\nWorking with Noam was both inspiring and rewarding—I’d collaborate with him again without hesitation",
+		testimoni: "Noam and I worked together in the Israeli Air Force, developing a real-time system for registering and tracking aerial imagery. His ability to seamlessly integrate software engineering with computer vision made a complex task significantly more manageable.\n\nWhat impressed me most was his analytical mindset—he didn't just implement solutions, he constantly evaluated and refined them to maximize efficiency. Whether it was optimizing performance, improving data handling, or troubleshooting under tight deadlines, Noam always brought well-thought-out strategies to the table. \n\nBeyond his technical skills, Noam's proactive approach and collaborative spirit made a huge impact on our team. He was always willing to share insights, mentor others, and ensure we were aligned on both the big picture and the technical details. Working with him was both productive and rewarding, and I wouldn’t hesitate to do so again.",
 		imageUrl: Evgeny,
 	  },
 	{
 		id: 3,
 		name: 'Meir H',
 		company: 'IAF',
-		testimoni: "I had the pleasure of managing Noam in the Israeli Air Force, where he played a key role in developing a real-time registration and tracking system for aerial imagery. His expertise in software engineering and computer vision, combined with his structured problem-solving approach, made a significant impact on our success.\n\nWhat sets Noam apart is his ability to quickly grasp complex challenges, break them down into actionable steps, and deliver high-quality solutions. He doesn’t just write code—he brings a deep understanding of the entire system, optimizing processes and improving overall performance. His ability to communicate technical concepts clearly and work seamlessly with different stakeholders makes him a valuable asset in any project.\n\nFor any company looking for expert consultancy in software engineering, computer vision, or real-time systems, Noam is the right person to call. His experience, efficiency, and ability to deliver results will undoubtedly drive any project forward",
+		testimoni: "During our time in the Israeli Air Force, Noam played an essential role in designing and implementing a real-time aerial imagery tracking system. His ability to take complex technical challenges and turn them into structured, effective solutions set him apart.\n\nHe doesn’t just focus on writing code—he takes a system-wide approach, ensuring everything is efficient, maintainable, and scalable. Noam has a natural ability to simplify intricate problems, which made working with him incredibly smooth. His technical expertise was crucial, but his ability to clearly communicate and align the team made an even bigger impact.\n\nIf you're looking for someone who combines technical depth with strategic thinking, Noam is an exceptional choice. He brings both the skill and mindset needed to drive projects forward with precision and reliability.",
 		imageUrl: Meir,
 	  },
 ];
 
 export const TeamMembers = [
 	{
-	  name: 'Rach David',
-	  position: 'CEO',
-	  imageUrl: CEO,
+	  name: 'Noam Salomonski',
+	  position: 'Founder & Lead Engineer',
+	  linkedin: 'https://www.linkedin.com/in/noam-salomonski/',
+	  imageUrl: Zilo,
 	},
 	{
-	  name: 'Pauline Sydney',
-	  position: 'HRD',
-	  imageUrl: HRD,
+	  name: 'Daniel Razumov',
+	  position: 'Media & Marketing Lead',
+	  linkedin: 'https://www.linkedin.com/in/razumovdaniel/',
+	  imageUrl: Daniel,
 	},
 	{
-	  name: 'Granger Watterson',
-	  position: 'Finance',
-	  imageUrl: Finance,
-	},
-	{
-	  name: 'Tom Jimmy',
-	  position: 'Project Manager',
-	  imageUrl: ProjectManager,
-	},
-	{
-	  name: 'Jim Hendrix',
-	  position: 'Front-end Developer',
-	  imageUrl: Frontend1,
-	},
-	{
-	  name: 'Calvin Max',
-	  position: 'Front-end Developer',
-	  imageUrl: Frontend2,
-	},
-	{
-	  name: 'Hawkins Jim',
-	  position: 'Back-end Developer',
-	  imageUrl: Backend1,
-	},
-	{
-	  name: 'Don Bizaro',
-	  position: 'Back-end Developer',
-	  imageUrl: Backend2,
-	},
-	{
-	  name: 'Bill Markinson',
-	  position: 'Mobile Developer',
-	  imageUrl: Mobile1,
-	},
-	{
-	  name: 'Igor Kavarov',
-	  position: 'Mobile Developer',
-	  imageUrl: Mobile2,
-	},
-	{
-	  name: 'Freddie Curl',
-	  position: 'UI/UX Designer',
-	  imageUrl: UIUX2,
-	},
-	{
-	  name: 'Monica Lovegood',
-	  position: 'UI/UX Designer',
-	  imageUrl: UIUX1,
+	  name: 'Noam Steiner',
+	  position: 'Software Engineer',
+	  linkedin: 'https://www.linkedin.com/in/noamsteiner/',
+	  imageUrl: Steiner,
 	},
 ];

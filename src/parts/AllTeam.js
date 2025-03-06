@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
 
 import Fade from 'react-awesome-reveal';
 
@@ -20,6 +21,13 @@ export default function AllTeam({ data }) {
 	                </div>
 	                <h2 className="text-theme-blue text-center text-xl">{item.name}</h2>
 	                <p className="font-light text-gray-400 text-center mb-3">{item.position}</p>
+	                {item.linkedin && (
+	                  <div className="flex justify-center">
+	                    <a href={item.linkedin} target="_blank" rel="noopener noreferrer" className="text-theme-blue hover:text-blue-700">
+	                      <FaLinkedin className="w-6 h-6" />
+	                    </a>
+	                  </div>
+	                )}
 	              </div>
 	            </div>
 	          </Fade>
