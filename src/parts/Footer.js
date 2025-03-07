@@ -9,7 +9,7 @@ export default function Footer() {
 					<div className="w-1/3 ml-16 mr-8">
 						{/* Limit width so Fitty knows the available space */}
 						<div className="max-w-sm sm:max-w-md lg:max-w-lg">
-							<BrandIcon />
+							<BrandIcon minSize={25} maxSize={50} />
 						</div>
 						<p className="text-lg text-gray-400 font-light mt-2">
 							Growing Your Business

@@ -12,7 +12,7 @@ export default function Header() {
 	return (
 		<header className={styles.header}>
 			<div className={styles.headerContainer}>
-				<BrandIcon />
+				<BrandIcon minSize={40} maxSize={50} />
 
 				{/* Hamburger button (mobile only) */}
 				<button

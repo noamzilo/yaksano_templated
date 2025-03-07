@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import fitty from 'fitty';
 
-export default function FitText({ children, minSize = 20, maxSize = 50 }) {
+export default function FitText({ children, minSize = 30, maxSize = 50 }) {
 	const fitRef = useRef(null);
 
 	useEffect(() => {
