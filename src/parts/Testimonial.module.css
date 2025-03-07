@@ -1,0 +1,73 @@
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1rem;
+}
+
+.title {
+	font-size: 2.25rem;
+	color: var(--theme-blue);
+	text-align: center;
+	font-weight: 700;
+}
+
+.subtitle {
+	font-weight: 300;
+	font-size: 1rem;
+	color: #9ca3af;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.testimonialCard {
+	display: flex;
+	flex-direction: column;
+	border-radius: 1rem;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e5e7eb;
+	padding: 1rem 1.5rem;
+	margin: 1rem 0.5rem;
+}
+
+.profileSection {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.profileImage {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.profileInfo {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1rem;
+}
+
+.profileName {
+	color: var(--theme-blue);
+	font-size: 1.25rem;
+}
+
+.profileCompany {
+	font-weight: 300;
+	color: #9ca3af;
+	font-size: 0.875rem;
+}
+
+.testimonialText {
+	font-weight: 300;
+	font-size: 1.125rem;
+	color: #9ca3af;
+	padding-left: 1rem;
+}
+
+.swiperContainer {
+	width: 100%;
+	max-width: 56rem;
+	margin: 0 auto;
+} 
