@@ -12,8 +12,9 @@ export default function Header() {
 	return (
 		<header className={styles.header}>
 			<div className={styles.headerContainer}>
-				<BrandIcon minSize={40} maxSize={50} />
-
+				<div className={styles.brandContainer}>
+					<BrandIcon minSize={40} maxSize={50} />
+				</div>
 				{/* Hamburger button (mobile only) */}
 				<button
 					className={styles.menuButton}

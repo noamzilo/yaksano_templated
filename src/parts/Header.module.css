@@ -88,6 +88,7 @@
 /* ===== DESKTOP NAV ===== */
 .navList {
 	display: none; /* hidden on mobile */
+	margin-right: 3rem;
 }
 
 .navList ul {
@@ -125,6 +126,13 @@
 .activeNavItem {
 	font-weight: bold;
 	text-decoration: underline;
+}
+
+.brandContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 3rem;
 }
 
 .ctaButton {
