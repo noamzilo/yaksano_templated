@@ -54,6 +54,7 @@ export default function Hero() {
 						className="max-w-full h-auto object-contain"
 						src={WebsiteHero}
 						alt="Build Website"
+						style={{ borderRadius: "20px" }}
 					/>
 				</Fade>
 			</div>
