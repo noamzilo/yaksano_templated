@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.21aedff3.css",
-    "main.js": "/static/js/main.a7e2f58d.js",
+    "main.js": "/static/js/main.03d407ae.js",
     "static/js/453.f845e572.chunk.js": "/static/js/453.f845e572.chunk.js",
     "static/media/EPD.jpg": "/static/media/EPD.9af1e6ef6b2037e5bb5e.jpg",
     "static/media/PortfolioHero.jpg": "/static/media/PortfolioHero.5a7f766274cf426daa0b.jpg",
@@ -9,10 +9,10 @@
     "static/media/AI2.jpg": "/static/media/AI2.bb00ca339d6e74ab2a32.jpg",
     "static/media/NotFound.png": "/static/media/NotFound.67759b4097c5294d1ab9.png",
     "static/media/uveye1.jpg": "/static/media/uveye1.3347f666bffd666fe529.jpg",
-    "static/media/team.png": "/static/media/team.917072ad0c0d596e2c70.png",
     "static/media/seo_site.jpg": "/static/media/seo_site.f2c132295949989f7445.jpg",
     "static/media/WebsiteHero.jpg": "/static/media/WebsiteHero.9a034611a83c042544f2.jpg",
     "static/media/WEB2.jpg": "/static/media/WEB2.7354e4f71725590a8de7.jpg",
+    "static/media/Team3.png": "/static/media/Team3.264da66507d514904eff.png",
     "static/media/Zilo.jpg": "/static/media/Zilo.d20a4ae9ee30ef8e4cd9.jpg",
     "static/media/Ilya.jpeg": "/static/media/Ilya.643dc26a1f1ed331df2d.jpeg",
     "static/media/uveye2.jpg": "/static/media/uveye2.83b59945452f62808360.jpg",
@@ -28,11 +28,11 @@
     "static/media/Meir.jpeg": "/static/media/Meir.d4d5ec1544b2eb1f84fa.jpeg",
     "index.html": "/index.html",
     "main.21aedff3.css.map": "/static/css/main.21aedff3.css.map",
-    "main.a7e2f58d.js.map": "/static/js/main.a7e2f58d.js.map",
+    "main.03d407ae.js.map": "/static/js/main.03d407ae.js.map",
     "453.f845e572.chunk.js.map": "/static/js/453.f845e572.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21aedff3.css",
-    "static/js/main.a7e2f58d.js"
+    "static/js/main.03d407ae.js"
   ]
 }
