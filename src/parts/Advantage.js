@@ -41,7 +41,7 @@ export default function Advantage({ data }) {
 	        <div className="flex-col -mt-4 sm:mt-14">
 	          {
 	            data[1].map((item, index) => (
-	              <Fade bottom triggerOnce delay={500 * index} key={index}>
+	              <Fade bottom triggerOnce threshold={0.1} delay={Math.floor((Math.random() +0.5) * 350)} key={index}>
 	                <div>
 	                  <div className="bg-white flex flex-row items-center p-3 my-6 mx-3 sm:my-7 sm:mx-3 xl:my-14 xl:mx-7 rounded-2xl shadow-xl border border-light-theme-purple transform transition duration-500 hover:scale-105">
 	                    <img src={item.imageUrl} alt="" className="w-1/3" />
