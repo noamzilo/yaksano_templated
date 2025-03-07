@@ -1,22 +1,16 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable import/extensions */
-
 import React from 'react';
-
 import Button from '../elements/Button';
+import FitText from './FitText';
 
 export default function BrandIcon() {
 	return (
-	  <Button
-	    className=""
-	    type="link"
-	    href="/"
-	  >
-	    <p className="text-theme-blue text-4xl font-medium ">
-	      Yaksano
-	      <span className="text-theme-purple">Software</span>
-	    </p>
-	  </Button>
+		<Button className="block w-full" type="link" href="/">
+			<FitText minSize={24} maxSize={50}> {/* Increase minSize */}
+				<span className="text-theme-blue font-medium whitespace-nowrap">
+					Yaksano
+					<span className="text-theme-purple">Software</span>
+				</span>
+			</FitText>
+		</Button>
 	);
 }
