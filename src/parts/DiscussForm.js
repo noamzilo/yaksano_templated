@@ -29,16 +29,22 @@ export const DiscussForm = (actions) => {
 		}
 	
 		try {
-			const response = await fetch('http://localhost:5000/send-email', {
+			const response = await fetch('https://personal-website-backend-839353010571.us-central1.run.app/api/send-email', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ name, company, email, phone, projectIdea }),
+				body: JSON.stringify({ 
+					name, 
+					company, 
+					email, 
+					phone, 
+					content: projectIdea 
+				}),
 			});
 	
 			const result = await response.json();
 	
 			if (response.ok) {
-				toast.success('Success! We’ll get back to you soon.');
+				toast.success('Success! We will get back to you soon.');
 				resetForm();
 			} else {
 				toast.error(result.error);
