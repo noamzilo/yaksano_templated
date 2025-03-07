@@ -11,6 +11,7 @@ import Button from '../elements/Button';
 import styles from './Portfolio.module.css';
 
 export default function Portfolio({ data }) {
+
 	return (
 		<section className={styles.container}>
 			<Fade direction="right" triggerOnce>
@@ -28,7 +29,8 @@ export default function Portfolio({ data }) {
 						direction="up"
 						triggerOnce
 						bottom
-						delay={500 * index}
+						delay={Math.floor((Math.random() +0.5) * 350)}
+						threshold={0.1}
 						// eslint-disable-next-line react/no-array-index-key
 						key={index}
 					>
