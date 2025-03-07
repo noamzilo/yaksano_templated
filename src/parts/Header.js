@@ -5,7 +5,6 @@ import BrandIcon from './BrandIcon';
 import styles from './Header.module.css';
 
 export default function Header() {
-	// Track mobile menu state
 	const [isOpen, setIsOpen] = useState(false);
 	const location = useLocation();
 	const currentPath = location.pathname;
@@ -15,10 +14,10 @@ export default function Header() {
 			<div className={styles.headerContainer}>
 				<BrandIcon />
 
-				{/* Hamburger Button (shows/hides mobile menu) */}
+				{/* Hamburger button (mobile only) */}
 				<button
 					className={styles.menuButton}
-					onClick={() => setIsOpen((prev) => !prev)}
+					onClick={() => setIsOpen(!isOpen)}
 					aria-label="Toggle menu"
 				>
 					<svg
@@ -47,7 +46,7 @@ export default function Header() {
 				</button>
 			</div>
 
-			{/* MOBILE MENU OVERLAY */}
+			{/* MOBILE OVERLAY MENU */}
 			<nav className={`${styles.mobileMenu} ${isOpen ? styles.show : ''}`}>
 				<button
 					className={styles.closeButton}
@@ -100,7 +99,7 @@ export default function Header() {
 				</ul>
 			</nav>
 
-			{/* DESKTOP MENU */}
+			{/* DESKTOP NAV (HORIZONTAL) */}
 			<nav className={styles.navList}>
 				<ul>
 					<li>
