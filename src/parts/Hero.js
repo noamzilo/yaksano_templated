@@ -49,14 +49,16 @@ export default function Hero() {
 				</Fade>
 			</div>
 			<div className={styles.heroRight}>
-				<Fade direction="up" triggerOnce>
-					<img
-						className={styles.heroImage}
-						src={WebsiteHero}
-						alt="Build Website"
-						style={{ borderRadius: "20px" }}
-					/>
-				</Fade>
+				<div className={styles.imageContainer}>
+					<Fade direction="up" triggerOnce>
+						<img
+							className={styles.heroImage}
+							src={WebsiteHero}
+							alt="Build Website"
+							style={{ borderRadius: "20px" }}
+						/>
+					</Fade>
+				</div>
 			</div>
 		</section>
 	);

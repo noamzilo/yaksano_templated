@@ -124,7 +124,12 @@
 }
 
 .heroImage {
-	max-width: 100%;
 	height: auto;
 	object-fit: contain;
 }
+
+.imageContainer {
+	max-width: 80%;
+	max-height: 80%;
+}
+
