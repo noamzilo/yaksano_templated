@@ -24,6 +24,7 @@
 	padding-left: 1rem;
 	padding-right: 1rem;
 	margin-bottom: 2rem;
+	text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -32,6 +33,7 @@
 		padding-left: 2rem;
 		padding-right: 2rem;
 		margin-bottom: 0;
+		text-align: left;
 	}
 }
 
