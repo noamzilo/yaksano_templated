@@ -73,3 +73,28 @@
 	color: #9ca3af;
 	text-align: center;
 }
+
+.portfolioImage {
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	z-index: 0;
+}
+
+.viewButton {
+	outline: none;
+}
+
+.viewButton:focus {
+	outline: none;
+}
+
+.viewIcon {
+	width: 5rem;
+	height: 5rem;
+	color: #e5e7eb; /* text-gray-200 equivalent */
+}
+
+.cardContent {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}

@@ -38,12 +38,12 @@ export default function Portfolio({ data }) {
 									<img
 										src={item.imageUrl}
 										alt="Portfolio"
-										className="rounded-t-2xl z-0"
+										className={styles.portfolioImage}
 									/>
 									<div className={styles.overlay}>
-										<button className="focus:outline-none">
+										<button className={styles.viewButton}>
 											<svg
-												className="w-20 h-20 text-gray-200"
+												className={styles.viewIcon}
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -66,7 +66,7 @@ export default function Portfolio({ data }) {
 									</div>
 								</div>
 
-								<div className="py-4">
+								<div className={styles.cardContent}>
 									<h2 className={styles.title}>{item.title}</h2>
 									<p className={styles.subtitle}>{item.type}</p>
 								</div>
