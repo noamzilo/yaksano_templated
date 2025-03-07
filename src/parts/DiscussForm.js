@@ -5,11 +5,9 @@
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Fade } from 'react-awesome-reveal';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import * as emailjs from '@emailjs/browser';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { ToastContainer, toast } from 'react-toastify';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -20,6 +18,8 @@ import Button from 'elements/Button';
 
 export const DiscussForm = (actions) => {
 	const { data, resetForm } = actions;
+	const [isSubmitting, setIsSubmitting] = useState(false);
+
 	const submitEmail = async () => {
 		const { name, company, email, phone, projectIdea } = data;
 	
@@ -27,11 +27,16 @@ export const DiscussForm = (actions) => {
 			toast.error('Please fill out all fields.');
 			return;
 		}
+
+		setIsSubmitting(true);
 	
 		try {
 			const response = await fetch('https://personal-website-backend-839353010571.us-central1.run.app/api/send-email', {
 				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
 				body: JSON.stringify({ 
 					name, 
 					company, 
@@ -41,16 +46,18 @@ export const DiscussForm = (actions) => {
 				}),
 			});
 	
-			const result = await response.json();
-	
-			if (response.ok) {
-				toast.success('Success! We will get back to you soon.');
-				resetForm();
-			} else {
-				toast.error(result.error);
+			if (!response.ok) {
+				throw new Error(`HTTP error! status: ${response.status}`);
 			}
+	
+			const result = await response.json();
+			toast.success('Success! We will get back to you soon.');
+			resetForm();
 		} catch (error) {
+			console.error('Error sending email:', error);
 			toast.error('Error sending email. Please try again.');
+		} finally {
+			setIsSubmitting(false);
 		}
 	};
 	
@@ -125,11 +132,19 @@ export const DiscussForm = (actions) => {
 	          />
 	        </div>
 	        <Button
-	          className="text-xl mx-auto px-12 py-3 mt-5 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200 focus:outline-none"
+	          className="text-xl mx-auto px-12 py-3 mt-5 rounded-full border-2 transition duration-200 focus:outline-none"
+	          style={{
+	            backgroundColor: isSubmitting ? '#9CA3AF' : 'var(--theme-purple)',
+	            borderColor: isSubmitting ? '#9CA3AF' : 'var(--theme-purple)',
+	            color: isSubmitting ? '#4B5563' : 'white',
+	            cursor: isSubmitting ? 'not-allowed' : 'pointer',
+	            opacity: isSubmitting ? 0.7 : 1
+	          }}
 	          type="button"
 	          onClick={submitEmail}
+	          disabled={isSubmitting}
 	        >
-	          Submit
+	          {isSubmitting ? 'Sending...' : 'Submit'}
 	        </Button>
 	      </div>
 	    </Fade>

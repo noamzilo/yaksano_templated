@@ -16,3 +16,4 @@
 - Use the most specific commands possible, for example isfile() is better than exists().
 - Attempt to write code that will lint without errors. For example, remove unused imports and variables.
 - We are a software company, specilizing in computer vision, genAI, machine and deep learning.
+- don't use apostrophes (') in plain HTML because it causes escaping issues. escape them properly or use something else.
