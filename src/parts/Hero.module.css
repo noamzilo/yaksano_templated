@@ -1,0 +1,130 @@
+:root {
+	--theme-purple: #6610f2;
+	--dark-theme-purple: #6b21a8;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+/* Matches Tailwind's `md:` (min-width: 768px) */
+@media (min-width: 768px) {
+	.hero {
+		flex-direction: row;
+	}
+}
+
+.heroLeft {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+	.heroLeft {
+		width: 50%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		margin-bottom: 0;
+	}
+}
+
+.heroTitle {
+	font-size: 2.25rem;
+	color: var(--theme-blue);
+	font-weight: bold;
+	line-height: 1.25;
+	margin-bottom: 1.25rem;
+}
+
+/* Matches Tailwind's `sm:` (min-width: 640px) */
+@media (min-width: 640px) {
+	.heroTitle {
+		font-size: 3rem;
+	}
+}
+
+.heroDescription {
+	font-weight: 300;
+	font-size: 1rem;
+	color: #9CA3AF;
+	line-height: 1.625;
+	margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+	.heroDescription {
+		font-size: 1.125rem;
+	}
+}
+
+.heroButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	/* Approximate equivalents to w-71/h-18 */
+	width: 17.75rem;
+	height: 4.5rem;
+
+	padding: 1.25rem 3.5rem;
+	font-size: 1.25rem;
+	color: #fff;
+	background-color: var(--theme-purple);
+	border-radius: 0.5rem;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+	transition: background-color 0.2s;
+	text-decoration: none;
+	border: none;
+}
+
+.heroButton:hover {
+	background-color: var(--dark-theme-purple);
+}
+
+.heroButtonIcon {
+	margin-left: 0.5rem;
+	width: 1.75rem;
+	height: 1.75rem;
+	color: #fff;
+}
+
+.animateBounceX {
+	animation: bounceX 1s infinite;
+}
+
+@keyframes bounceX {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(25%);
+	}
+}
+
+.heroRight {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+	.heroRight {
+		width: 50%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+.heroImage {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
