@@ -7,7 +7,7 @@
 	align-items: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 512px) {
 	.header {
 		padding: 0.75rem 2rem;
 	}
@@ -19,7 +19,7 @@
 	width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 512px) {
 	.headerContainer {
 		width: auto;
 	}
@@ -30,7 +30,7 @@
 	color: var(--theme-blue);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 512px) {
 	.menuButton {
 		display: none;
 	}
@@ -52,7 +52,7 @@
 	align-items: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 512px) {
 	.navList {
 		display: flex;
 		flex-direction: row;
@@ -101,7 +101,7 @@
 	z-index: 10;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 512px) {
 	.mobileMenu {
 		display: none;
 	}
