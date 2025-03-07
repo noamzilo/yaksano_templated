@@ -113,8 +113,8 @@
 
 .heroRight {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: right;
+	align-items: right;
 	width: 100%;
 }
 
@@ -128,18 +128,25 @@
 	.hero {
 		padding: 0 1rem;
 	}
+	.heroRight {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .heroImage {
 	height: auto;
 	object-fit: contain;
 	max-width: 100%;
+	
 }
 
 .imageContainer {
-	width: 100%;
+	max-width: 80%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 
