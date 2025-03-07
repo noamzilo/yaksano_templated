@@ -13,10 +13,10 @@ import Button from '../elements/Button';
 export default function Portfolio({ data }) {
 	return (
 	  <section className="container mx-auto flex flex-col items-center mt-20">
-	    <Fade direction="right" triggerOnce threshold={0.2}>
+	    <Fade direction="right" triggerOnce>
 	      <h1 className="text-5xl text-theme-blue text-center font-bold">Featured Projects</h1>
 	    </Fade>
-	    <Fade direction="left" triggerOnce threshold={0.2}>
+	    <Fade direction="left" triggerOnce>
 	      <p className="font-light text-lg text-gray-400 text-center mb-12">
 	        Case studies and projects we&apos;ve worked on.
 	      </p>
@@ -26,7 +26,7 @@ export default function Portfolio({ data }) {
 	      {
 	        data.map((item, index) => (
 	          // eslint-disable-next-line react/no-array-index-key
-	          <Fade direction="up" triggerOnce bottom delay={500 * index} threshold={0.05} key={index}>
+	          <Fade direction="up" triggerOnce bottom delay={500 * index} key={index}>
 	            <Button type="link" href={`/projects/${item.id}`}>
 	              <div className="group rounded-2xl shadow-xl w-auto m-3 transform transition duration-500 hover:scale-110 portofolio-card">
 	                <div className="relative">
