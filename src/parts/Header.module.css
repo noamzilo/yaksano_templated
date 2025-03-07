@@ -11,8 +11,8 @@
 	align-items: center;
 	width: 100%;
 	gap: 1rem;
+	justify-content: space-between; /* This pushes hamburger to the right */
 }
-
 /* ===== HAMBURGER BUTTON (MOBILE) ===== */
 .menuButton {
 	display: block;
