@@ -120,44 +120,9 @@
 	text-align: center;
 }
 
-/* (Keeping all your extra Tailwind overrides / Swiper arrows, etc. below) */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-section {
-	@apply mb-28;
-}
-
-.active-link {
-	@apply text-theme-purple;
-}
-
-.header {
-	@apply flex flex-col py-4 mb-4 justify-between;
-}
-
-.hero {
-	@apply container px-5 flex flex-col mx-auto;
-}
-
-.portofolio-card:hover .img-hover {
-	@apply opacity-25;
-}
-
-@media (min-width: 1024px) {
-	.header {
-		@apply container w-full flex-row py-8 px-10 mt-2 mb-4 mx-auto items-center content-center border-b border-gray-100;
-	}
-
-	.hero {
-		@apply container flex-row mx-auto mt-8;
-	}
-}
-
-/* Custom styles for Swiper navigation buttons */
-.swiper-button-next,
-.swiper-button-prev {
+/* Swiper navigation buttons */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
 	background-color: rgba(160, 157, 157, 0.311);
 	border-radius: 50%;
 	font-size: 30px;
@@ -169,8 +134,8 @@ section {
 	color: #000;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+:global(.swiper-button-next)::after,
+:global(.swiper-button-prev)::after {
 	font-size: 30px;
 	color: #000;
 	content: '';
@@ -180,16 +145,16 @@ section {
 	padding: 5px;
 }
 
-.swiper-button-next::after {
+:global(.swiper-button-next)::after {
 	transform: rotate(-45deg);
 }
 
-.swiper-button-prev::after {
+:global(.swiper-button-prev)::after {
 	transform: rotate(135deg);
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+:global(.swiper-button-next):hover,
+:global(.swiper-button-prev):hover {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
