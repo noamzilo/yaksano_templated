@@ -11,10 +11,7 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
 	return (
-		<section
-			className={styles.hero}
-			style={{ scrollSnapAlign: "start", marginBottom: "1em" }}
-		>
+		<section className={styles.hero}>
 			<div className={styles.heroLeft}>
 				<h1 className={styles.heroTitle}>
 					End-to-End Solutions <br />
@@ -32,7 +29,7 @@ export default function Hero() {
 					>
 						See Our Work
 						<svg
-							className={`${styles.heroButtonIcon} ${styles.animateBounceX}`}
+							className={styles.heroButtonIcon}
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
@@ -55,7 +52,6 @@ export default function Hero() {
 							className={styles.heroImage}
 							src={WebsiteHero}
 							alt="Build Website"
-							style={{ borderRadius: "20px" }}
 						/>
 					</Fade>
 				</div>
