@@ -1,22 +1,22 @@
 .container {
 	width: 100%;
-	margin: 0 auto;
+	margin: 5rem auto 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 5rem;
 }
 
 .heading {
 	font-size: 3rem;
 	font-weight: bold;
 	text-align: center;
+	color: var(--theme-blue);
 }
 
 .subheading {
 	font-weight: 300;
 	font-size: 1.125rem;
-	color: #9ca3af; /* gray-400 */
+	color: var(--gray-400);
 	text-align: center;
 	margin-bottom: 3rem;
 }
@@ -25,7 +25,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
-	grid-gap: 1rem;
+	gap: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -37,7 +37,7 @@
 .card {
 	border-radius: 1rem;
 	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-	width: auto;
+	width: 100%;
 	margin: 0.75rem;
 	transition: transform 0.5s;
 }
@@ -46,8 +46,26 @@
 	transform: scale(1.1);
 }
 
+/* ---- KEY: pure CSS approach for a perfect square container ---- */
 .imageContainer {
 	position: relative;
+	width: 100%;
+	padding-top: 100%;
+	overflow: hidden;
+	border-radius: 1rem;
+}
+
+/* The absolute-fill trick ensures the image covers the container */
+.portfolioImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	z-index: 0;
 }
 
 .overlay {
@@ -61,27 +79,18 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 1rem;
+	transition: opacity 0.3s;
 }
 
-.title {
-	text-align: center;
-	font-size: 1.25rem;
-}
-
-.subtitle {
-	font-weight: 300;
-	color: #9ca3af;
-	text-align: center;
-}
-
-.portfolioImage {
-	border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem;
-	z-index: 0;
+.card:hover .overlay {
+	opacity: 1;
 }
 
 .viewButton {
-	outline: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
 }
 
 .viewButton:focus {
@@ -91,10 +100,109 @@
 .viewIcon {
 	width: 5rem;
 	height: 5rem;
-	color: #e5e7eb; /* text-gray-200 equivalent */
+	color: var(--gray-200);
 }
 
 .cardContent {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding: 1rem 0;
+}
+
+.title {
+	text-align: center;
+	font-size: 1.25rem;
+	color: var(--theme-blue);
+	margin-bottom: 0.5rem;
+}
+
+.subtitle {
+	font-weight: 300;
+	color: var(--gray-400);
+	text-align: center;
+}
+
+/* (Keeping all your extra Tailwind overrides / Swiper arrows, etc. below) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+	@apply mb-28;
+}
+
+.active-link {
+	@apply text-theme-purple;
+}
+
+.header {
+	@apply flex flex-col py-4 mb-4 justify-between;
+}
+
+.hero {
+	@apply container px-5 flex flex-col mx-auto;
+}
+
+.portofolio-card:hover .img-hover {
+	@apply opacity-25;
+}
+
+@media (min-width: 1024px) {
+	.header {
+		@apply container w-full flex-row py-8 px-10 mt-2 mb-4 mx-auto items-center content-center border-b border-gray-100;
+	}
+
+	.hero {
+		@apply container flex-row mx-auto mt-8;
+	}
+}
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+	background-color: rgba(160, 157, 157, 0.311);
+	border-radius: 50%;
+	font-size: 30px;
+	width: 33px;
+	height: 31px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 30px;
+	color: #000;
+	content: '';
+	border: solid #000;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 5px;
+}
+
+.swiper-button-next::after {
+	transform: rotate(-45deg);
+}
+
+.swiper-button-prev::after {
+	transform: rotate(135deg);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: bold !important;
+}
+
+.discuss {
+	background-image: url("data:image/svg+xml,%3Csvg ... (long inline SVG) ... %3C/svg%3E");
 }
