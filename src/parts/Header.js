@@ -101,7 +101,7 @@ export default function Header() {
 			</nav>
 
 			{/* DESKTOP NAV (HORIZONTAL) */}
-			<nav className={styles.navList}>
+			<nav className={styles.desktopNav}>
 				<ul>
 					<li>
 						<Button
