@@ -135,6 +135,8 @@
 	object-fit: contain;
 	max-width: 100%;
 	border-radius: 20px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
 }
 
 .imageContainer {
