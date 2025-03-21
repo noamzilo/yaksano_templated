@@ -28,6 +28,7 @@ import Meir from '../assets/images/Testimonials/Meir.jpeg';
 import Zilo from '../assets/images/TeamMembers/Zilo.jpg';
 import Daniel from '../assets/images/TeamMembers/Daniel.jpeg';
 import Steiner from '../assets/images/TeamMembers/Steiner.jpeg';
+import Ivan from '../assets/images/TeamMembers/Ivan.jpeg';
 
 
 export const Services = [
@@ -177,15 +178,21 @@ export const TeamMembers = [
 	  imageUrl: Zilo,
 	},
 	{
-	  name: 'Daniel Razumov',
+	  name: 'Daniel R.',
 	  position: 'Media & Marketing Lead',
 	  linkedin: 'https://www.linkedin.com/in/razumovdaniel/',
 	  imageUrl: Daniel,
 	},
 	{
-	  name: 'Noam Steiner',
+	  name: 'Noam S.',
 	  position: 'Software Engineer',
 	  linkedin: 'https://www.linkedin.com/in/noamsteiner/',
 	  imageUrl: Steiner,
 	},
+	{
+		name: 'Ivan S.',
+		position: 'Software Engineer',
+		linkedin: 'https://www.linkedin.com/in/ivan-solodov/',
+		imageUrl: Ivan,
+	  },
 ];
