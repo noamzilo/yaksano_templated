@@ -29,6 +29,7 @@ import Zilo from '../assets/images/TeamMembers/Zilo.jpg';
 import Daniel from '../assets/images/TeamMembers/Daniel.jpeg';
 import Steiner from '../assets/images/TeamMembers/Steiner.jpeg';
 import Ivan from '../assets/images/TeamMembers/Ivan.jpeg';
+import Hannan from '../assets/images/TeamMembers/Hannan.jpg';
 
 
 export const Services = [
@@ -194,5 +195,11 @@ export const TeamMembers = [
 		position: 'Software Engineer',
 		linkedin: 'https://www.linkedin.com/in/ivan-solodov/',
 		imageUrl: Ivan,
+	  },
+	  {
+		name: 'Hannan N.',
+		position: 'DBA',
+		linkedin: 'https://www.linkedin.com/in/hannannussbaum/',
+		imageUrl: Hannan,
 	  },
 ];
